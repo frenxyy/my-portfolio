@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.home {
+  background-color: #1c1f23;
+}
+
+
+/* Navbar */
+
+.navbar .container {
+  gap: 32rem;
+}
+
+.navbar .container > a {
+  font-size: 32px;
+  font-weight: 700;
+}
+.navbar .container .navbar-nav a {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(206, 206, 206);
+  cursor: pointer;
+}
+.navbar .container .navbar-nav a:hover{
+  color: white;
+}
+/* Navbar END */
+
+/* Home */
+.home {
+  background-color: #1c1f23;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.home > .container .col .row {
+  width: 450px;
+}
+.home > .container .col .row h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.home > .container .col .row p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Home END */
+
+/* Service */
+.service, .project {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 130px;
+  background-color: #1c1f23;
+}
+.service .container > h4,
+.project .container > h4 {
+  font-weight: 700;
+  font-size: 21px;
+}
+.service .container > h2, 
+.project .container > h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.card {
+  flex: 1 1 auto;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.card p {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(206, 206, 206);
+}
+.card a,
+.card .a {
+  width: fit-content;
+  border-radius: 15px;
+  padding: 8px 24px;
+  box-shadow: 2px -1px 16px 1px rgba(0,72,224,0.44);
+-webkit-box-shadow: 2px -1px 16px 1px rgba(0,72,224,0.44);
+-moz-box-shadow: 2px -1px 16px 1px rgba(0,72,224,0.44);
+}
+/* Service End */
+
+/* Project  */
+
+/* Project End  */
+/* Footer  */
+.footer .container .row .col ul li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Footer End */ 
+
+@media screen and (max-width: 991px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .home .container .col {
+    gap: 3rem;
+  }
+  .home .container .col > img {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .service, .project {
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .home .container .col .row h1 {
+    font-size: 32px;
+  }
+  .home > .container .col .row p {
+    font-size: 16px;
+    width: 350px;
+  }
+  .service, .project {
+    padding: 50px 5px;
+    margin: 0px 0px;
+  }
+  .card-body > p {
+    font-size: 14px;
+  }
+}
